@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'home_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:trilhaapp/pages/login_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -10,9 +10,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
-      ),
-      home: const HomePage(),
+          primarySwatch: Colors.yellow,
+          textTheme: GoogleFonts.robotoFlexTextTheme()),
+      home: const LoginPage(),
     );
   }
 }
